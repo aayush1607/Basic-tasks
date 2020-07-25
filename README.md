@@ -1,2 +1,3 @@
-# Vinnovate-recruitment-tasks
-This repo contains tasks of both backend and frontend.
+# Vinnovate-recruitment-Frontend-task
+This repo contains tasks of frontend.
+Tech: HTML,CSS AND BOOTSTRAP.
