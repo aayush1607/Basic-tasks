@@ -229,21 +229,54 @@ p.para{
     padding: 1rem 1rem;
     margin: 1.2rem 1rem;
 }
+
 .site-main .past-events .events .ind-evt{
  
-    border: 2px solid var(--border-color);
    
     text-align: center;
-    padding: 0.2rem 0.2rem;
-    margin: 1.2rem 1rem;
+    border: 2px solid var(--border-color);
     cursor: pointer;
     transition: transform .4s ease;
 
 }
-.site-main .past-events .events .ind-evt:hover{
-    box-shadow: var(--box-shadow);
-    transform: scale(1.1);
-    
+
+.site-main .past-events .events .ind-evt:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+
 }
+.bg-dark{
+    background-color: black!important;;
+}
+.site-main .past-events .events .ind-evt:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(40px);
+}
+.site-main .past-events .events .ind-evt:before,
+.site-main .past-events .events .ind-evt:after
+{
+    background: linear-gradient(235deg,#9ff712,black,rgb(250, 58, 10) );
+
+
+}
+
+.site-main .past-events .events .ind-evt:hover{
+    transform: scale(1.1);
+    background: linear-gradient(235deg,#9ff712,black,rgb(250, 58, 10) );
+}
+
 /*END Past events*/
 
