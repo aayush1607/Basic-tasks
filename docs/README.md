@@ -1,1 +1,0 @@
-Tech Used: HTML,CSS AND BOOTSTRAP.
